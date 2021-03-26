@@ -7,6 +7,7 @@ router.use("/session", sessionRouter);
 router.use("/users", usersRouter);
 
 module.exports = router;
+
 // router.post("/test", function (req, res) {
 //   res.json({ requestBody: req.body });
 // });

@@ -2,7 +2,7 @@
 
 {
     title: "The Time I Fell Asleep On the Way to the Beach",
-    dateOfMemory: "07/09/1998",
+    dateOfMemory: "1998-07-08",
     location: "Virginia Beach",
     memoryRating: "3",
     body: "Julie was driving, we were listening to a book on tape, I can't remember what, but I really zoned out and then fell asleep with my arm leaned against the window. It was not a comfortable position. 

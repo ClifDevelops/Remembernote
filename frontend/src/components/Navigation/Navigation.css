@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #929AAB;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: flex-end;
+
+}
+
+.navbar > ul {
+    list-style: none;
+}
+
+.navbar-links {
+    display: flex;
+    /* align-self: flex-end; */
+    /* justify-self: center; */
+    box-sizing: border-box;
+    font-size: 20px;
+    text-decoration: none;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+}

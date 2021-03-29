@@ -1,0 +1,9 @@
+.editor-container {
+    min-height: 600px;
+    min-width: 400px;
+    position:fixed;
+    top: 200px;
+    left: 200px;
+    border: 5px solid white;
+    background-color: whitesmoke;
+}

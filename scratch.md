@@ -13,3 +13,7 @@ npx dotenv sequelize-cli db:seed:all
 npx sequelize-cli seed:generate --name <descriptiveName>
 
 npx sequelize-cli seed:generate --name DemoUserContent
+
+npx sequelize-cli seed:generate --name DemoUserTags
+
+npx sequelize-cli seed:generate --name DemoUserMemoryTags

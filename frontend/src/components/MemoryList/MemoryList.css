@@ -1,0 +1,15 @@
+.memory-display-container {
+    min-height: 400px;
+    min-width: 100px;
+    box-sizing: border-box;
+    margin-top: 200px;
+
+    background-color: whitesmoke;
+    border: 5px solid brown;
+
+}
+
+.memory-title {
+    color: black;
+    font-size: 30px;
+}

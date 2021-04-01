@@ -48,7 +48,7 @@ const restoreUser = (req, res, next) => {
     return next();
   });
 };
-
+// If there is no current user, return an error
 const requireAuth = [
   restoreUser,
   function (req, res, next) {
@@ -62,6 +62,31 @@ const requireAuth = [
   },
 ];
 
+ const checkIfCurrentUser = (userId, req) => {
+   const { token } = req.cookies;
+   return jwt.verify(token, secret, null, async (err, jwtPayload) => {
+     if (err) {
+       return false;
+     }
+     try {
+       const { id } = jwtPayload.data;
+       return id === userId;
+     } catch (e) {
+       return false;
+     }
+   });
+ };
+ const getCurrentUserId = (req) => {
+   const { token } = req.cookies;
+   return jwt.verify(token, secret, null, async (err, jwtPayload) => {
+     if (err) {
+       return false;
+     }
+     const { id } = jwtPayload.data;
+
+     return id;
+   });
+ };
 
 
-module.exports = { setTokenCookie, restoreUser, requireAuth };
+module.exports = { setTokenCookie, restoreUser, requireAuth, checkIfCurrentUser, getCurrentUserId };

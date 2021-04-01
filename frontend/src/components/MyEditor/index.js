@@ -16,6 +16,7 @@ function MyEditor() {
         editorState={editorState}
         onChange={setEditorState}
         placeholder="Record your memory!"
+        
       />
     </div>
   );

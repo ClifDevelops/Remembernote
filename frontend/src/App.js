@@ -6,6 +6,7 @@ import SignupFormPage from "./components/SignupFormPage";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import MyEditor from "./components/MyEditor";
+import MemoryList from "./components/MemoryList"
 
 function App() {
   const dispatch = useDispatch();
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <Navigation isLoaded={isLoaded} />
+      <MemoryList />
       {isLoaded && (
         <Switch>
           <Route path="/login">

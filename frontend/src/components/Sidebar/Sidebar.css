@@ -1,0 +1,10 @@
+.sidebar-container {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-container > button {
+    max-width: 50%;
+}

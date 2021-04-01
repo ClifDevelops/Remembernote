@@ -1,8 +1,8 @@
 .memory-display-container {
-    min-height: 400px;
+    min-height: 100%;
     min-width: 100px;
     box-sizing: border-box;
-    margin-top: 200px;
+    /* margin-top: 200px; */
 
     background-color: whitesmoke;
     border: 5px solid brown;

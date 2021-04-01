@@ -6,7 +6,10 @@ import SignupFormPage from "./components/SignupFormPage";
 import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import MyEditor from "./components/MyEditor";
-import MemoryList from "./components/MemoryList"
+import MemoryList from "./components/MemoryList";
+import Sidebar from "./components/Sidebar";
+import Homepage from "./components/HomePage";
+import MemoryForm from "./components/MemoryForm";
 
 function App() {
   const dispatch = useDispatch();
@@ -18,7 +21,8 @@ function App() {
   return (
     <>
       <Navigation isLoaded={isLoaded} />
-      <MemoryList />
+      {/* <MemoryList /> */}
+      <MemoryForm />
       {isLoaded && (
         <Switch>
           <Route path="/login">
@@ -29,6 +33,9 @@ function App() {
           </Route>
           <Route path="/recordMemory">
             <MyEditor />
+          </Route>
+          <Route path="/homepage">
+            <Homepage />
           </Route>
         </Switch>
       )}

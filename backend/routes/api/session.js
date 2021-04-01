@@ -38,6 +38,7 @@ router.post(
     }
 
     await setTokenCookie(res, user);
+    res.cookie('user', user.id);
 
     return res.json({
       user,
@@ -50,6 +51,7 @@ router.delete(
   '/',
   (_req, res) => {
     res.clearCookie('token');
+    res.clearCookie('user');
     return res.json({ message: 'success' });
   }
 );

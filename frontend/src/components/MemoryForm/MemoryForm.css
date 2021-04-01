@@ -1,0 +1,8 @@
+.memory-form-container {
+    width: 400px;
+}
+
+.memory-form {
+    display: flex;
+    flex-direction: column;
+}

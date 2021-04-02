@@ -1,0 +1,26 @@
+.splash-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0B0B0D;
+    background-image: url('https://i.imgur.com/5h5Gtwa.jpg');
+    background-size: cover ;
+    height: 100%;
+    width: 100%;
+}
+
+.splash-banner {
+    font-size: 150px;
+    box-sizing: border-box;
+    margin: 100px;
+}
+
+.splash-subtitle {
+    font-size: 75px;
+}
+
+.splash-link {
+    box-sizing: border-box;
+    margin: 40px;
+    font-size: 40px;
+}

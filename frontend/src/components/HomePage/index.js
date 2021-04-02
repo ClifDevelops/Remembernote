@@ -7,16 +7,17 @@ import MemoryList from "../MemoryList"
 import MemoryForm from "../MemoryForm"
 import "./HomePage.css";
 
-const Homepage = () => {
+const Homepage = ({isLoaded}) => {
 
+  
 
     return (
-        <div className="homepage-container">
-            <Sidebar className="sidebar" />
-            <MemoryList className="mem-list" />
-            <MemoryForm className="form" />
-        </div>
-    )
+      <div className="homepage-container">
+        <Sidebar className="sidebar" isLoaded={isLoaded} />
+        <MemoryList className="mem-list" />
+        {/* <MemoryForm className="form" /> */}
+      </div>
+    );
 }
 
 export default Homepage;

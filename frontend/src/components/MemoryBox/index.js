@@ -10,7 +10,9 @@ function MemoryBox(memory) {
 
     return (
         <div className="memory-box-container">
-            <div className="memory-box-title">{memory.memory.title}</div>
+            <NavLink to={`/memories/${memory.memory.id}`}>
+                <div className="memory-box-title">{memory.memory.title}</div>
+            </NavLink>
             <div className="memory-box-location">{memory.memory.location}</div>
             <div className="memory-box-date">{memory.memory.dateOfMemory}</div>
         </div>

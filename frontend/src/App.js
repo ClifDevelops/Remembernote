@@ -4,12 +4,14 @@ import { Route, Switch } from "react-router-dom";
 import LoginFormPage from "./components/LoginFormPage";
 import SignupFormPage from "./components/SignupFormPage";
 import * as sessionActions from "./store/session";
+
 import Navigation from "./components/Navigation";
-import MyEditor from "./components/MyEditor";
 import MemoryList from "./components/MemoryList";
 import Sidebar from "./components/Sidebar";
 import Homepage from "./components/HomePage";
 import MemoryForm from "./components/MemoryForm";
+import Splash from "./components/Splash"
+import MemoryDisplay from "./components/MemoryDisplay"
 
 function App() {
   const dispatch = useDispatch();
@@ -25,17 +27,23 @@ function App() {
       {/* <MemoryForm /> */}
       {isLoaded && (
         <Switch>
+          <Route path="/" exact>
+            <Splash />
+          </Route>
           <Route path="/login">
             <LoginFormPage />
           </Route>
           <Route path="/signup">
             <SignupFormPage />
           </Route>
-          <Route path="/recordMemory">
-            <MyEditor />
-          </Route>
           <Route path="/homepage">
-            <Homepage />
+            <Homepage isLoaded={isLoaded} />
+          </Route>
+          <Route path="/memoryForm">
+            <MemoryForm />
+          </Route>
+          <Route path="/memories/:memoryId">
+            <MemoryDisplay />
           </Route>
         </Switch>
       )}

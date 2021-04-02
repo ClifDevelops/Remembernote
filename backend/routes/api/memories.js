@@ -37,8 +37,14 @@ const validateMemory = [
 
 router.get("/",
     asyncHandler(async function (req, res) {
-        const memories = await Memory.findAll();
-        return res.json(memories);
+      const currentUserId = parseInt(req.cookies.user, 10);
+      const memories = await Memory.findAll({
+        where: {
+          userId: currentUserId,
+        },
+        order:[["dateOfMemory", "desc"]]
+      });
+      return res.json(memories);
     }))
 
 router.get(

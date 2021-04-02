@@ -11,7 +11,7 @@ function LoginFormPage() {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
 
-  if (sessionUser) return <Redirect to="/" />;
+  if (sessionUser) return <Redirect to="/homepage" />;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,7 +25,7 @@ function LoginFormPage() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="login-container">
       <ul>
         {errors.map((error, idx) => (
           <li key={idx}>{error}</li>

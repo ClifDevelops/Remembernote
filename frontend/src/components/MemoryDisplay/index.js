@@ -7,12 +7,12 @@ import { useParams } from 'react-router-dom';
 
 const MemoryDisplay = () => {
     const {memoryId} = useParams();
-    const memory = useSelector(state => state.memory[memoryId]);
+    const memory = useSelector(state => state.memories[memoryId]);
     const dispatch = useDispatch();
 
-    useEffect(() => {
-        dispatch(getOneMemory(memoryId));
-    }, [dispatch, memoryId])
+    // useEffect(() => {
+    //     dispatch(getOneMemory(memoryId));
+    // }, [dispatch])
 
 
     return (

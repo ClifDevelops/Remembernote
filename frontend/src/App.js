@@ -20,9 +20,9 @@ function App() {
 
   return (
     <>
-      <Navigation isLoaded={isLoaded} />
+      {/* <Navigation isLoaded={isLoaded} /> */}
       {/* <MemoryList /> */}
-      <MemoryForm />
+      {/* <MemoryForm /> */}
       {isLoaded && (
         <Switch>
           <Route path="/login">

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams, useHistory } from "react-router-dom";
 import "./MemoryForm.css";
+import {createMemory} from "../../store/memories"
 
 
 
@@ -14,7 +15,7 @@ const MemoryForm = () => {
     const [location, setLocation] = useState("");
     const [memoryRating, setMemoryRating] = useState(5);
     const [body, setBody] = useState("");
-    //need a userId... how do I grab that?
+    
     const updateTitle = (e) => setTitle(e.target.value);
     const updateDateOfMemory = (e) => setDateOfMemory(e.target.value);
     const updateLocation = (e) => setLocation(e.target.value);
@@ -30,6 +31,16 @@ const MemoryForm = () => {
             location,
             memoryRating,
             body
+        }
+
+        const memory = await dispatch(createMemory(payload));
+        if (memory) {
+          setTitle("");
+          setDateOfMemory("");
+          setLocation("");
+          setMemoryRating(5);
+          setBody("");
+          history.push(`/homepage`)
         }
 
         
@@ -74,6 +85,8 @@ const MemoryForm = () => {
             form="memory-form"
             placeholder="Record your memory!"
             className="memory-form-textbox"
+            value={body}
+            onChange={updateBody}
           />
           <button type="submit">Store your memory!</button>
         </form>

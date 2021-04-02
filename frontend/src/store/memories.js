@@ -38,6 +38,23 @@ export const setMemories = () => async dispatch => {
     dispatch(load(memories));
 }
 
+export const createMemory = data => async dispatch => {
+    console.log(data);
+    const response = await csrfFetch(`/api/memories`, {
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+        const memory = await response.json();
+        dispatch(addMemory(memory));
+        return memory;
+    }
+}
+
 const initialState = {};
 //REDUCERS
 const memoriesReducer = (state = initialState, action) => {
@@ -46,7 +63,8 @@ const memoriesReducer = (state = initialState, action) => {
         case SET_MEMORY:
             return
         case ADD_MEMORY:
-            return
+            
+            return 
         case SET_MEMORIES:
             action.payload.forEach((memory) => {
                 newState[memory.id] = memory;

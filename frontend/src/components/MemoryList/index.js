@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useParams, NavLink} from "react-router-dom";
 import { setMemories } from "../../store/memories";
+import MemoryBox from "../MemoryBox"
 import "./MemoryList.css";
 
 const MemoryList = () => {
@@ -21,12 +22,13 @@ const MemoryList = () => {
     <div className="memory-display-container">
       {memories?.map((memory) => {
         return (
-          <div className="single-memory-container">
-            <h2 className="memory-title">{memory?.title}</h2>
-            <div>{memory?.dateOfMemory}</div>
-            <div>{memory?.memoryRating}</div>
-            <div>{memory?.body}</div>
-          </div>
+          <MemoryBox memory={memory} />
+          // <div className="single-memory-container">
+          //   <h2 className="memory-title">{memory?.title}</h2>
+          //   <div>{memory?.dateOfMemory}</div>
+          //   <div>{memory?.memoryRating}</div>
+          //   <div>{memory?.body}</div>
+          // </div>
         );
       })}
       

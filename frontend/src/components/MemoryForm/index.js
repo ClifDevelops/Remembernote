@@ -10,7 +10,7 @@ const MemoryForm = () => {
     const history = useHistory();
 
     const [title, setTitle] = useState("");
-    const [dateOfMemory, setDateOfMemory] = useState();
+    const [dateOfMemory, setDateOfMemory] = useState("");
     const [location, setLocation] = useState("");
     const [memoryRating, setMemoryRating] = useState(5);
     const [body, setBody] = useState("");
@@ -31,6 +31,8 @@ const MemoryForm = () => {
             memoryRating,
             body
         }
+
+        
     }
 
     return (

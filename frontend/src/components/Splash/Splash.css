@@ -26,4 +26,9 @@
     box-sizing: border-box;
     margin: 40px;
     font-size: 40px;
+    text-decoration: none;
+}
+
+.splash-link:hover {
+    text-decoration: underline;
 }

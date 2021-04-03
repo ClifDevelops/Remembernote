@@ -2,17 +2,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #0B0B0D;
-    background-image: url('https://i.imgur.com/5h5Gtwa.jpg');
-    background-size: cover ;
+    background: linear-gradient(to right, #69779B, #ACDBDF);
+    /* background-image: url('https://i.imgur.com/5h5Gtwa.jpg');
+    background-size: cover ; */
     height: 100%;
     width: 100%;
 }
 
 .splash-banner {
     font-size: 150px;
+    font-style: italic;
+    font-weight: 700;
     box-sizing: border-box;
     margin: 100px;
+    
 }
 
 .splash-subtitle {

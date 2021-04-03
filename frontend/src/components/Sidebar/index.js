@@ -11,13 +11,12 @@ const Sidebar = ({isLoaded}) => {
 
     return (
       <div className="sidebar-container">
-        <h2>Nice to see you {sessionUser.username}</h2>
+        <div className="sidebar-username">{sessionUser.username}</div>
         <NavLink to="/memoryForm">
           <button>Record Memory</button>
         </NavLink>
         
-        <button>Display Memories</button>
-        <button>Home</button>
+        
         <Navigation isLoaded={isLoaded} />
       </div>
     );

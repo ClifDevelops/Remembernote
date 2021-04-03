@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch, useSelector } from "react-redux";
-import { Redirect, NavLink } from "react-router-dom";
+import { Redirect, NavLink, Link } from "react-router-dom";
 import "./MemoryBox.css";
 
 function MemoryBox(memory) {

@@ -40,42 +40,48 @@ function SignupFormPage() {
           ))}
         </ul>
         <label className="signup-element">
-          Email
+          {/* Email */}
           <input
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            placeholder="Email"
           />
         </label>
         <label className="signup-element">
-          Username
+          {/* Username */}
           <input
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
+            placeholder="Username"
           />
         </label>
         <label className="signup-element">
-          Password
+          {/* Password */}
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            placeholder="Password"
           />
         </label>
         <label className="signup-element">
-          Confirm Password
+          {/* Confirm Password */}
           <input
             type="password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
+            placeholder="Confirm Password"
           />
         </label>
-        <button type="submit" className="signup-button">Sign Up</button>
+        <button type="submit" className="signup-button">
+          Sign Up!
+        </button>
       </form>
     </div>
   );

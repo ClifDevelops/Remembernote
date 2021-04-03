@@ -19,10 +19,10 @@ const MemoryList = () => {
   }
 
   return (
-    <div className="memory-display-container">
+    <div className="memory-list-container">
       {memories?.map((memory) => {
         return (
-          <MemoryBox memory={memory} />
+          <MemoryBox key={memory.id} memory={memory} />
           // <div className="single-memory-container">
           //   <h2 className="memory-title">{memory?.title}</h2>
           //   <div>{memory?.dateOfMemory}</div>

@@ -1,6 +1,7 @@
 .signup-container {
-    width: 60vh;
+    width: 60vw;
     height: fit-content;
+    width: fit-content;
     border: 5px solid #474A56;
     display: flex;
     flex-direction:column ;
@@ -9,7 +10,7 @@
     box-sizing: border-box;
     padding: 10px;
     position: relative;
-    margin-left: 33vw;
+    margin-left: 40vw;
     margin-top: 25vh;
     background-color: #D3D5FD;
     /* align-items: center; */
@@ -25,11 +26,21 @@
 }
 
 .signup-button {
-    width:20vh;
+    box-sizing: border-box;
+    margin-left: 20px;
+    width:80%;
     height:5vh;
     font-size: 3vh;
     background-color: #474A56;
     /* justify-self: center;
     align-self: center;
     position: absolute; */
+}
+
+.signup-element > input {
+    height: 70px;
+    width: 300px;
+    border-radius: 10px;
+    font: inherit;
+    font-size: 30px;
 }

@@ -1,5 +1,11 @@
 /* TODO Add site wide styles */
 @import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 body{
-    background-color: #0B0B0D;
+    background-color: #010101;
+    font-family: 'Playfair Display', serif;
+}
+
+.active {
+    text-decoration: none;
 }

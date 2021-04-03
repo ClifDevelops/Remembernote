@@ -25,32 +25,47 @@ function LoginFormPage() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="login-container">
-      <ul>
-        {errors.map((error, idx) => (
-          <li key={idx}>{error}</li>
-        ))}
-      </ul>
-      <label>
-        Username or Email
-        <input
-          type="text"
-          value={credential}
-          onChange={(e) => setCredential(e.target.value)}
-          required
-        />
-      </label>
-      <label>
-        Password
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-      </label>
-      <button type="submit">Log In</button>
-    </form>
+    <div className="login-container">
+      <div className="login-title">Login</div>
+      <form onSubmit={handleSubmit}>
+        <ul>
+          {errors.map((error, idx) => (
+            <li key={idx}>{error}</li>
+          ))}
+        </ul>
+        <div className="login-div">
+          <label className="login-label">
+            {/* Username or Email */}
+            <input
+              type="text"
+              value={credential}
+              onChange={(e) => setCredential(e.target.value)}
+              required
+              placeholder="Username or Email"
+              className="login-input"
+            />
+          </label>
+        </div>
+        <div className="login-div">
+          <label className="login-label">
+            {/* Password */}
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              className="login-input"
+              placeholder="Password"
+            />
+          </label>
+        </div>
+        <div>
+          <button type="submit" className="login-button">
+            Log In
+          </button>
+        </div>
+      </form>
+    </div>
   );
 }
 

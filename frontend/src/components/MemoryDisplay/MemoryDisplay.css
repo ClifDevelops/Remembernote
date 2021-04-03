@@ -1,0 +1,45 @@
+.memory-display {
+    display: flex;
+    flex-direction: column;
+    background-color: #69779B;
+    height: fit-content;
+    width: 90%;
+    
+    box-sizing: border-box;
+    padding: 40px;
+    margin-left: 70px;
+    margin-right: 40px;
+}
+.memory-display-title {
+    font-size: 70px;
+    font-weight: 500;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.memory-display-date {
+    font-size: 30px;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-left: 50px;
+}
+.memory-display-location {
+    font-size: 30px;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-left: 50px;
+}
+.memory-display-rating {
+    font-size: 30px;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-left: 50px;
+}
+.memory-display-body {
+    font-size: 40px;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

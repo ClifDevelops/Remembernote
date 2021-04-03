@@ -1,13 +1,17 @@
-.memory-display-container {
+.memory-list-container {
     min-height: 100%;
     min-width: 100px;
     box-sizing: border-box;
+    padding: 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    grid-area: memories;
+    overflow-x: scroll;
 
     /* margin-top: 200px; */
 
-    background-color: #FEFFDE;
+    background: linear-gradient(to right, #69779B, #ACDBDF);
     border-left: 5px solid black;
 
 }

@@ -5,7 +5,7 @@ import { Redirect, NavLink, Link } from "react-router-dom";
 import "./MemoryBox.css";
 
 function MemoryBox(memory) {
-    console.log(memory.memory.id)
+    // console.log(memory.memory.id)
 
 
     return (

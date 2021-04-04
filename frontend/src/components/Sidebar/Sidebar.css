@@ -17,6 +17,19 @@
 
 .sidebar-username {
     font-size: 50px;
+    font-weight: 500;
     box-sizing: border-box;
     margin-bottom: 20px;
+}
+
+.sidebar-button {
+    height: 6vh;
+    background-color: #ACDBDF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 15px;
+}
+
+.sidebar-button:hover {
+    box-shadow: 2px 2px 2px 2px #69779B;
 }

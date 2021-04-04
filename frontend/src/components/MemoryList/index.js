@@ -9,7 +9,7 @@ const MemoryList = () => {
   const dispatch = useDispatch();
   const memories = useSelector(state => Object.values(state?.memories));
   
-  console.log("memories", memories)
+  // console.log("memories", memories)
   useEffect(() => {
     dispatch(setMemories());
   }, [dispatch]);

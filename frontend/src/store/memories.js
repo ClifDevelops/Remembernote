@@ -6,10 +6,10 @@ const DELETE_MEMORY = "memory/DELETE";
 const UNSET_MEMORIES = "memories/UNSET";
 const SET_MEMORIES = "memories/SET"
 //ACTIONS
-const setMemory = (memory) => ({
-  type: SET_MEMORY,
-  payload: memory,
-});
+// const setMemory = (memory) => ({
+//   type: SET_MEMORY,
+//   payload: memory,
+// });
 
 const load = (memories) => ({
     type: SET_MEMORIES,
@@ -20,16 +20,22 @@ const addMemory = (memory) => ({
     type: ADD_MEMORY,
     payload: memory,
 });
+
+const unset = () => {
+    return {
+        type: UNSET_MEMORIES
+    }
+}
 //THUNKS (Async Actions)
-export const setOneMemory = (id) => async (dispatch) => {
-  const response = await csrfFetch(`/api/memories/${id}`);
-  if (!response.ok) {
-      throw response;
-  }
-    const memory = await response.json();
-    dispatch(setMemory(memory));
+// export const setOneMemory = (id) => async (dispatch) => {
+//   const response = await csrfFetch(`/api/memories/${id}`);
+//   if (!response.ok) {
+//       throw response;
+//   }
+//     const memory = await response.json();
+//     dispatch(setMemory(memory));
   
-};
+// };
 
 export const setMemories = () => async dispatch => {
     const response = await csrfFetch(`/api/memories`);
@@ -39,6 +45,11 @@ export const setMemories = () => async dispatch => {
     const memories = await response.json();
     dispatch(load(memories));
 }
+
+export const unsetMemories = () => async (dispatch) => {
+  
+  dispatch(unset());
+};
 
 export const createMemory = data => async dispatch => {
     console.log(data);
@@ -72,7 +83,10 @@ const memoriesReducer = (state = initialState, action) => {
                 newState[memory.id] = memory;
             });
             return newState;
-            
+        case UNSET_MEMORIES:
+            newState.memories = {};
+            return newState;
+
         
         default:
             return state;

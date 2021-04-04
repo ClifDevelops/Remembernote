@@ -36,6 +36,7 @@ const validateMemory = [
 ];
 
 router.get("/",
+    requireAuth,
     asyncHandler(async function (req, res) {
       const currentUserId = parseInt(req.cookies.user, 10);
       const memories = await Memory.findAll({
@@ -75,7 +76,4 @@ router.post(
 
   })
 )
-
-// console.log(req.cookies.user);
-// const id = parseInt(req.cookies.user, 10);
 module.exports = router;

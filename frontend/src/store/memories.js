@@ -2,6 +2,8 @@ import { csrfFetch } from "./csrf";
 
 const SET_MEMORY = "memory/GET";
 const ADD_MEMORY = "memory/ADD";
+const DELETE_MEMORY = "memory/DELETE";
+const UNSET_MEMORIES = "memories/UNSET";
 const SET_MEMORIES = "memories/SET"
 //ACTIONS
 const setMemory = (memory) => ({

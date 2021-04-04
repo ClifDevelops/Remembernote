@@ -1,13 +1,23 @@
 import Navigation from "../Navigation"
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams, NavLink } from "react-router-dom";
+import { useParams, NavLink, useHistory } from "react-router-dom";
 import { setMemories } from "../../store/memories";
+import * as sessionActions from "../../store/session";
 
 import "./Sidebar.css";
 
 const Sidebar = ({isLoaded}) => {
+    const dispatch = useDispatch();
+    const history = useHistory();
     const sessionUser = useSelector((state) => state.session.user);
+
+
+    const logout = (e) => {
+      e.preventDefault();
+      dispatch(sessionActions.logout());
+      history.push("/");
+    };
 
     return (
       <div className="sidebar-container">
@@ -15,7 +25,8 @@ const Sidebar = ({isLoaded}) => {
         <NavLink to="/memoryForm">
           <button>Record Memory</button>
         </NavLink>
-        <Navigation isLoaded={isLoaded} />
+        <button onClick={logout}>Log Out</button>
+        {/* <Navigation isLoaded={isLoaded} /> */}
       </div>
     );
 }

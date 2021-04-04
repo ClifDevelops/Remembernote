@@ -22,6 +22,10 @@ const MemoryForm = () => {
     const updateMemoryRating = (e) => setMemoryRating(e.target.value);
     const updateBody = (e) => setBody(e.target.value);
 
+    const headHome = () => {
+      history.push('/homepage')
+    }
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -42,12 +46,14 @@ const MemoryForm = () => {
           setBody("");
           history.push(`/homepage`)
         }
+      }
 
         
-    }
-
+    
+      
     return (
       <section className="memory-form-container">
+        <button className="to-home-button" onClick={headHome}>Head Back Home</button>
         <form onSubmit={handleSubmit} id="memory-form" className="memory-form">
           <input
             type="text"

@@ -1,5 +1,7 @@
 .sidebar-container {
-    background-color: #69779B;
+    /* background-color: #69779B; */
+    background-image: url('https://images2.minutemediacdn.com/image/upload/c_crop,h_1192,w_2121,x_0,y_111/f_auto,q_auto,w_1100/v1554702738/shape/mentalfloss/49786-istock_0.jpg');
+    background-size: cover ;
     color:#010101;
     display: flex;
     flex-direction: column;

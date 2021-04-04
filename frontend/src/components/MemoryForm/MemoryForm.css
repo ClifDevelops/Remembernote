@@ -1,8 +1,65 @@
 .memory-form-container {
-    width: 400px;
+    width: 98%;
+    box-sizing: border-box;
+    margin-left: 10px;
+    /* margin-right: 10px; */
+    margin-top: 10px;
+    padding: 100px;
+    /* background-color: #ACDBDF; */
+    background-image: url('https://i.imgur.com/5h5Gtwa.jpg');
+    background-size: cover ;
+    border-radius: 10px;
 }
 
 .memory-form {
     display: flex;
     flex-direction: column;
+}
+
+.memory-input {
+    box-sizing: border-box;
+    margin: 10px;
+    height: 50px;
+    font-size: 30px;
+    font: inherit;
+    text-align: center;
+    border-radius: 10px;
+    color: #010101;
+    background-color: #F0ECE2;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #69779B;
+}
+
+.memory-input:hover {
+    box-shadow: 3px 3px 3px 3px #69779B;
+}
+
+.memory-form-textbox {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    height: 300px;
+    font-size: 30px;
+    font: inherit;
+    text-align: left;
+    border-radius: 10px;
+    color: #010101;
+    background-color: #F0ECE2;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #69779B;
+}
+.memory-form-textbox:hover {
+    box-shadow: 3px 3px 3px 3px #69779B;
+}
+.memory-form-button{
+    width: 500px;
+    height: 70px;
+    box-sizing: border-box;
+    margin-left: 350px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #69779B;
+}
+.memory-form-button:hover{
+    box-shadow: 3px 3px 3px 3px #69779B;
 }

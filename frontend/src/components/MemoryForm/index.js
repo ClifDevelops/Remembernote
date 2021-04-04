@@ -88,7 +88,7 @@ const MemoryForm = () => {
             value={body}
             onChange={updateBody}
           />
-          <button type="submit">Store your memory!</button>
+          <button type="submit" className="memory-form-button">Store your memory!</button>
         </form>
       </section>
     );

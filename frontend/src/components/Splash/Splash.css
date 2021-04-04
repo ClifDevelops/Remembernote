@@ -7,6 +7,7 @@
     background-size: cover ; */
     height: 100%;
     width: 100%;
+    
 }
 
 .splash-banner {
@@ -27,8 +28,26 @@
     margin: 40px;
     font-size: 40px;
     text-decoration: none;
+    
+}
+.splash-link:visited {
+    color:black;
 }
 
 .splash-link:hover {
     text-decoration: underline;
 }
+
+.demo-button {
+    height: 6vh;
+    background-color: #ACDBDF;
+    border-radius: 15px;
+}
+
+.demo-button:hover {
+    box-shadow: 2px 2px 2px 2px #69779B;
+}
+/* 
+.Nav_link:visited {
+    color: red;
+} */

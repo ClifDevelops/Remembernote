@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 import * as sessionActions from "../../store/session";
-import DemoLogin from "../DemoLogin";
 import "./Splash.css"
 
 function Splash() {
@@ -25,11 +24,12 @@ function Splash() {
         <NavLink to="/login" className="splash-link">
           Already have an account? Log In!
         </NavLink>
+        <button onClick={loginDemoUser} className="demo-button">Try out as a demo user!</button>
         <NavLink to="/signup" className="splash-link">
-          Sign Up
+         Want to get started? Sign up here!
         </NavLink>
-        <button onClick={loginDemoUser}>Try out as a demo user!</button>
-        {/* <DemoLogin /> */}
+        
+        
       </div>
     );
 }

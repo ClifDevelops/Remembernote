@@ -15,8 +15,6 @@ const Sidebar = ({isLoaded}) => {
         <NavLink to="/memoryForm">
           <button>Record Memory</button>
         </NavLink>
-        
-        
         <Navigation isLoaded={isLoaded} />
       </div>
     );

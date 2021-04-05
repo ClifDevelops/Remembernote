@@ -6,6 +6,10 @@ npx sequelize-cli model:generate --name Tag --attributes tagName:string
 
 npx sequelize-cli model:generate --name memoryTag --attributes memoryId:integer,tagId:integer
 
+npx dotenv sequelize-cli db:drop
+
+npx dotenv sequelize-cli db:create
+
 npx dotenv sequelize-cli db:migrate
 
 npx dotenv sequelize-cli db:seed:all

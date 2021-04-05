@@ -40,12 +40,19 @@
 
 .demo-button {
     height: 6vh;
-    background-color: #ACDBDF;
+    background-color: transparent;
     border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 1px 1px 1px 2px #69779B;
 }
 
 .demo-button:hover {
-    box-shadow: 2px 2px 2px 2px #69779B;
+    box-shadow: 3px 3px 5px 2px #69779B;
+}
+.demo-button:focus {
+    outline: 0;
 }
 /* 
 .Nav_link:visited {

@@ -4,6 +4,8 @@
 body{
     background-color: #010101;
     font-family: 'Playfair Display', serif;
+    background-image: url('https://t3.ftcdn.net/jpg/03/30/61/50/360_F_330615018_xy8WVbNEQ68wSQHNdxBGTQhFSo6vIA05.jpg');
+    background-size: cover;
 }
 
 .active {

@@ -30,6 +30,10 @@
     box-shadow: 1px 1px 1px 1px #69779B;
 }
 
+.memory-input:focus {
+    outline: 0;
+}
+
 .memory-input:hover {
     box-shadow: 3px 3px 3px 3px #69779B;
 }
@@ -63,7 +67,35 @@
     border-radius: 10px;
     border: none;
     box-shadow: 1px 1px 1px 1px #69779B;
+    background-color: aliceblue;
+    font: inherit;
+    font-size: 28px;
+    font-weight: 500;
 }
 .memory-form-button:hover{
+    box-shadow: 3px 3px 3px 3px #69779B;
+}
+.memory-form-button:focus{
+    outline: 0;
+}
+
+.to-home-memory-button {
+    width: 20%;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #69779B;
+    /* position: absolute; */
+    margin-left: 70px;
+    font: inherit;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: aliceblue;
+}
+.to-home-memory-button:focus {
+    outline: 0;
+}
+.to-home-memory-button:hover {
     box-shadow: 3px 3px 3px 3px #69779B;
 }

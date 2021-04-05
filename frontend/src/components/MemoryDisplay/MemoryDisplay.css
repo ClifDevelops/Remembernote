@@ -1,12 +1,13 @@
 .memory-display {
     display: flex;
     flex-direction: column;
-    background-color: #ACDBDF;
+    /* background-color: #ACDBDF; */
     height: fit-content;
     min-height: 100%;
     width: 90%;
-    background-image: url('https://st.depositphotos.com/3008028/4295/i/950/depositphotos_42950671-stock-photo-white-texture-or-background.jpg');
-    background-size: cover ;
+    background-color: transparent;
+    /* background-image: url('https://st.depositphotos.com/3008028/4295/i/950/depositphotos_42950671-stock-photo-white-texture-or-background.jpg');
+    background-size: cover ; */
     
     box-sizing: border-box;
     padding: 40px;
@@ -17,10 +18,14 @@
     font-size: 70px;
     font-weight: 500;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    
     /* background-color: rgba(240, 236, 226, .9); */
     width: fit-content;
-    padding: 8px;
+    padding-left: 110px;
+    padding-right: 110px;
     border-radius: 8px;
     align-self: center;
 }
@@ -81,10 +86,13 @@
     box-shadow: 1px 1px 1px 1px #69779B;
     position: relative;
     left:-300px;
-    background-color: rgba(240, 236, 226, .9);
+    background-color: transparent;
     /* position: absolute;
     left: -200px; */
 }
 .to-home-button:hover{
     box-shadow: 3px 3px 3px 3px #69779B;
+}
+.to-home-button:focus{
+    outline: 0;
 }

@@ -48,6 +48,10 @@
     border: none;
     box-shadow: 1px 1px 1px 1px #69779B;
 }
+
+.memory-form-textbox:focus {
+    outline: 0;
+}
 .memory-form-textbox:hover {
     box-shadow: 3px 3px 3px 3px #69779B;
 }

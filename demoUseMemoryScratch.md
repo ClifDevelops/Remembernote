@@ -18,7 +18,7 @@ people: Julie(exgf), Patrick,
 },
 {
     title: "When I Ripped My Pants on Stage in Front of the Choir",
-    dateOfMemory: "05/11/2007",
+    dateOfMemory: "05-11-2007",
     location: "Manassas, VA",
     memoryRating: 7,
     body: `This is a funny story. I was choir president and me and Patrick were doing some choreography for the Spring choir concert. Most of the class was sitting in the audience while we were on stage showing them the dance moves. The auditorium seats were about eye level with the stage, depending on where you were sitting, and I did this knee slide move straight to the front of the stage, and right then my pants ripped right up the crotch.
@@ -30,7 +30,7 @@ people: Julie(exgf), Patrick,
 },
 {
     title: "Making an Igloo in a Huge Blizzard",
-    dateOfMemory: "12/18/1996",
+    dateOfMemory: "12-18-1996",
     location: "Manassas, VA",
     memoryRating: 9,
     body: `Not a lot to remember except that there was a huge blizzard in '96 and we got tons of school off, and I recall creating this massive igloo (massive in respect to my young self) and sleeping inside of it, and my mom brought me out hot chocolate and it was fine that I just wanted to curl up and stay inside this quiet little snow shelter. 
@@ -41,7 +41,7 @@ people: Julie(exgf), Patrick,
 },
 {
     title: "My First Dog",
-    dateOfMemory: "05/12/2013",
+    dateOfMemory: "05-12-2013",
     location: "Norfolk, VA",
     memoryRating: 10,
     body: `Julie had a family friend that kept Corgis on their farm. When they had puppies, Julie and I were invited to go play, and it's one of my best memories. We rolled around with those puppies for so long while their mom and dad watched on proudly, and it was so fun!
@@ -52,3 +52,29 @@ people: Julie(exgf), Patrick,
     createdAt: new Date(),
     updatedAt: new Date(),
 }, 
+{
+    title: "Asking For a Christmas Gift",
+    dateOfMemory: "1995-12-12",
+    location: "America",
+    memoryRating: 8,
+    body: 'For Christmas when I was 7, I asked for a Barbie doll house (my friend had one, and I was enamored by the elevator). In the weeks before Christmas, the biggest present I’d ever seen to date was wrapped in the corner of the living room (of course, it was too large to fit under the tree). I hoped beyond hope that I knew what it was. On Christmas Day, when my sister and I opened it, there stood a generic doll house, sans elevator. I remember as a child knowing that that wasn’t what I had asked for, but that my parents probably either didn’t know the difference or used all the money they could for it. I was thankful, and it still got a lot of play time. But I never told them of that slight twinge of disappointment since I knew it would break their hearts. And I didn’t want to look ungrateful. What a perceptive child I was.',
+    userId: 1,
+    createdAt: new Date(),
+    updatedAt: new Date(),
+}, 
+
+The sun woke me. A stream of light that hit me right in the eyeball. Rude. I yanked the covers over my head, burrowing, but flashes from the night before made it impossible to return to sleep. There’d been a lot of loudness—music . . . laughing . . . clinking of glasses . . . many glasses. Celebrating . . . what were we celebrating? Oh, right. The New Year and crap.
+
+I pulled the blanket off my face. Squinted at the clock. It was way too early to be getting up on a day off. But whatever. I slid my legs off the edge of the bed. Rubbed my eyes. Buster’s collar jingled as he got up, stretched, and plopped his big ol’ head in my lap. I yawned. Scratched him behind the ears. A bright pink sticky notepad on my nightstand caught my eye. ‘BE BETTER,’ it said in my sloppy handwriting. Be better?
+
+As I brushed my teeth to relieve my breath of the ick, I remembered some more from the night before—the later and much less fun part. The part where I’d released my liquid dinner in bursts of heaving and vowed to make changes—to ‘be better.’
+
+Okay, I could do that. I went back and snatched up the notepad. First, breakfast. A healthy one. I scribbled ‘EAT HEALTHY’ and stuck it to my box of pop tarts. Not a bad start. I grabbed myself an energy drink, downed it, then attached a ‘DRINK MORE WATER’ to the can. Then added a ‘RECYCLE’ note as a positive afterthought. So far, so good.
+
+Then it was time to take Buster out. I snapped on his leash. We went downstairs and into the apartment courtyard. After doggie did his business, I went to grab a bag. There were none, as usual. Talk about needing to ‘be better,’ but I knew how to handle this. I stuck a ‘REFILL THESE BAGS’ note on the canister as an expansion of my positivity. You are welcome, apartment management staff. As Buster and I walked on through the neighborhood, I noticed many instances where others could ‘be better’ and was kind enough to leave notes such as ‘WASH YOUR CAR’ and ‘RAKE THESE LEAVES.’ I also left some helpful ‘MOW YOUR LAWN’ and ‘REPAINT YOUR HOUSE’ stickies.
+
+After such a productive walk, I rested at home for the remainder of the day. Later, I ordered pizza. The delivery guy seemed surprised by my ‘CUT YOUR HAIR’ which I attached to his ugly jacket. I then generously handed him a ‘BUY A NEW JACKET’ and wished him a Happy New Year as I closed the door.
+
+That night, I reflected on all the bettering I had done. It was a lot of work but it was worth it. Before I switched out the light I had one last note to write. On my last sticky I wrote, ‘BUY MORE STICKY NOTES.’
+
+It was going to be a great year.

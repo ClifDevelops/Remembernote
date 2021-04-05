@@ -7,7 +7,7 @@ import * as sessionActions from "../../store/session";
 
 import "./Sidebar.css";
 
-const Sidebar = ({isLoaded}) => {
+const Sidebar = () => {
     const dispatch = useDispatch();
     const history = useHistory();
     const sessionUser = useSelector((state) => state.session.user);
@@ -24,12 +24,12 @@ const Sidebar = ({isLoaded}) => {
       <div className="sidebar-container">
         <div className="sidebar-username">{sessionUser.username}</div>
         <NavLink to="/memoryForm">
-          <button className="sidebar-button">Record Memory</button>
+          <button className="sidebar-memory-button">Record Memory</button>
         </NavLink>
-        <button onClick={logout} className="sidebar-button">
+        <button onClick={logout} className="sidebar-logout-button">
           Log Out
         </button>
-        {/* <Navigation isLoaded={isLoaded} /> */}
+        
       </div>
     );
 }

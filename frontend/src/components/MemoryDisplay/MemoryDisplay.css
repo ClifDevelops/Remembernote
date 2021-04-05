@@ -4,7 +4,7 @@
     /* background-color: #ACDBDF; */
     height: fit-content;
     min-height: 100%;
-    width: 90%;
+    width: 70%;
     background-color: transparent;
     /* background-image: url('https://st.depositphotos.com/3008028/4295/i/950/depositphotos_42950671-stock-photo-white-texture-or-background.jpg');
     background-size: cover ; */
@@ -12,20 +12,22 @@
     box-sizing: border-box;
     padding: 40px;
     margin-left: 70px;
-    margin-right: 40px;
+    margin-right: 70px;
+    position: relative;
+    left: 200px;
 }
 .memory-display-title {
-    font-size: 70px;
+    font-size: 65px;
     font-weight: 500;
     box-sizing: border-box;
-    margin: 100px;
+    margin: 80px;
     margin-right: 100px;
     margin-left: 100px;
     
     /* background-color: rgba(240, 236, 226, .9); */
     width: fit-content;
-    padding-left: 110px;
-    padding-right: 110px;
+    /* padding-left: 110px;
+    padding-right: 110px; */
     border-radius: 8px;
     align-self: center;
 }
@@ -33,18 +35,18 @@
     font-size: 30px;
     box-sizing: border-box;
     margin: 10px;
-    margin-left: 50px;
+    /* margin-left: 30px; */
     /* background-color: rgba(240, 236, 226, .9); */
     width: fit-content;
     padding: 8px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     align-self: center;
 }
 .memory-display-location {
     font-size: 30px;
     box-sizing: border-box;
     margin: 10px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     /* background-color: rgba(240, 236, 226, .9); */
     width: fit-content;
     padding: 8px;
@@ -55,7 +57,7 @@
     font-size: 30px;
     box-sizing: border-box;
     margin: 10px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     /* background-color: rgba(240, 236, 226, .9); */
     width: fit-content;
     padding: 8px;

@@ -5,7 +5,7 @@
     box-shadow: 2px 2px 2px 2px black;
     background-image: url('https://www.refreshtek.com/wp-content/uploads/2018/10/background.jpg');
     background-size: cover ;
-    border-radius: 10px;
+    border-radius: 20px;
     box-sizing: border-box;
     margin: 25px;
     padding: 10px;
@@ -16,6 +16,12 @@
         "location"
         "date"
         "blurb";
+}
+.memory-box-container:hover {
+    /* box-shadow: 5px 5px 3px 2px black; */
+    position: relative;
+    top: 5px;
+    left: 5px;
 }
 
 .memory-box-title {

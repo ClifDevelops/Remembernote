@@ -1,6 +1,6 @@
 .sidebar-container {
     /* background-color: #69779B; */
-    background-image: url('https://images2.minutemediacdn.com/image/upload/c_crop,h_1192,w_2121,x_0,y_111/f_auto,q_auto,w_1100/v1554702738/shape/mentalfloss/49786-istock_0.jpg');
+    background-image: url('https://i.pinimg.com/originals/4f/39/10/4f39103da156fb7e479abd6355932e88.jpg');
     background-size: cover ;
     color:#010101;
     display: flex;
@@ -20,6 +20,7 @@
     font-weight: 500;
     box-sizing: border-box;
     margin-bottom: 20px;
+    color: #ACDBDF;
 }
 
 .sidebar-button {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Redirect } from "react-router-dom";
+import { Redirect, useHistory } from "react-router-dom";
 import * as sessionActions from "../../store/session";
 import "./SignupForm.css";
 
@@ -12,8 +12,13 @@ function SignupFormPage() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState([]);
+  const history = useHistory();
 
   if (sessionUser) return <Redirect to="/homepage" />;
+
+  const headHome = () => {
+    history.push("/homepage");
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -82,7 +87,12 @@ function SignupFormPage() {
         <button type="submit" className="signup-button">
           Sign Up!
         </button>
+        
       </form>
+      <button className="to-home-signup-button" onClick={headHome}>
+        Head Back Home
+      </button>
+      
     </div>
   );
 }

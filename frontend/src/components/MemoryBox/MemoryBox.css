@@ -1,19 +1,21 @@
 .memory-box-container {
-    height: 200px;
+    height: 300px;
     width: 200px;
     border: 2px solid black;
     box-shadow: 2px 2px 2px 2px black;
-    background-color: #F0ECE2;
+    background-image: url('https://www.refreshtek.com/wp-content/uploads/2018/10/background.jpg');
+    background-size: cover ;
     border-radius: 10px;
     box-sizing: border-box;
-    margin: 5px;
-    padding: 5px;
+    margin: 25px;
+    padding: 10px;
     display: grid;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 2fr;
     grid-template-areas:
         "title"
         "location"
-        "date";
+        "date"
+        "blurb";
 }
 
 .memory-box-title {
@@ -24,14 +26,30 @@
     grid-row-end: 2; */
 }
 
+.memory-box-link {
+    text-decoration: none;
+    color: #010101;;
+}
+
+.memory-box-link:hover {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.memory-box-link:visited {
+    color: inherit;
+}
+
 .memory-box-location {
     grid-area: location;
+    font-size: 16px;
     /* grid-row-start: 1;
     grid-row-end: 3; */
 }
 
 .memory-box-date {
     grid-area: date;
+    font-size: 16px;
     /* grid-row-start: 2;
     grid-row-end: 4; */
 }

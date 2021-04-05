@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to right, #69779B, #ACDBDF);
-    /* background-image: url('https://cdn.pixabay.com/photo/2020/11/24/14/50/sunset-5772800_960_720.jpg');
-    background-size: cover ; */
+    /* background: linear-gradient(to right, #69779B, #ACDBDF); */
+    background-image: url('https://i.pinimg.com/originals/d6/5e/7e/d65e7e7abf4055a03be418c63485d969.jpg');
+    background-size: cover ;
     height: 100%;
     width: 100%;
     
